@@ -1,0 +1,22 @@
+	@i
+	M=1
+	@5
+	D=A
+	@J
+	M=D
+(LOOP)	
+	@i
+	D=M
+	@5
+	D=A-D
+	@END
+	D;JLT
+	@J
+	M=M-1
+	@i
+	M=M+1
+	@LOOP
+	0;JMP
+(END)
+	@END
+	0;JMP
